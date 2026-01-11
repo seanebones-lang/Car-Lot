@@ -1,0 +1,100 @@
+{
+  "common": {
+    "appName": "AutoLot Pro Desktop",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "add": "Agregar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "export": "Exportar",
+    "import": "Importar",
+    "close": "Cerrar",
+    "submit": "Enviar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito"
+  },
+  "navigation": {
+    "inventory": "Inventario",
+    "crm": "CRM",
+    "sales": "Ventas",
+    "scheduling": "Programación",
+    "reports": "Informes",
+    "settings": "Configuración"
+  },
+  "inventory": {
+    "title": "Inventario de Vehículos",
+    "addCar": "Agregar Vehículo",
+    "editCar": "Editar Vehículo",
+    "vin": "VIN",
+    "decodeVin": "Decodificar VIN",
+    "make": "Marca",
+    "model": "Modelo",
+    "year": "Año",
+    "price": "Precio",
+    "status": "Estado",
+    "available": "Disponible",
+    "sold": "Vendido",
+    "pending": "Pendiente",
+    "photo": "Foto",
+    "notes": "Notas"
+  },
+  "crm": {
+    "title": "Gestión de Relaciones con Clientes",
+    "customers": "Clientes",
+    "leads": "Prospectos",
+    "addCustomer": "Agregar Cliente",
+    "addLead": "Agregar Prospecto",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "status": "Estado",
+    "new": "Nuevo",
+    "contacted": "Contactado",
+    "qualified": "Calificado",
+    "converted": "Convertido",
+    "lost": "Perdido",
+    "followUp": "Fecha de Seguimiento"
+  },
+  "sales": {
+    "title": "Ventas y Facturación",
+    "createSale": "Crear Venta",
+    "selectCar": "Seleccionar Vehículo",
+    "selectCustomer": "Seleccionar Cliente",
+    "saleDate": "Fecha de Venta",
+    "tax": "Impuesto",
+    "total": "Total",
+    "generateInvoice": "Generar Factura",
+    "invoice": "Factura"
+  },
+  "scheduling": {
+    "title": "Programación de Empleados",
+    "addShift": "Agregar Turno",
+    "employee": "Empleado",
+    "startTime": "Hora de Inicio",
+    "endTime": "Hora de Fin",
+    "date": "Fecha"
+  },
+  "reports": {
+    "title": "Informes y Análisis",
+    "dashboard": "Panel de Control",
+    "totalInventory": "Valor Total del Inventario",
+    "salesThisMonth": "Ventas de Este Mes",
+    "activeLeads": "Prospectos Activos"
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "theme": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "translationApi": "API de Traducción",
+    "apiKey": "Clave API",
+    "enableTranslation": "Habilitar Toggle de Traducción",
+    "autoLock": "Bloqueo Automático",
+    "lockAfter": "Bloquear Después de (minutos)"
+  }
+}

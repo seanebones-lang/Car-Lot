@@ -1,0 +1,100 @@
+{
+  "common": {
+    "appName": "AutoLot Pro Desktop",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "close": "Close",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "navigation": {
+    "inventory": "Inventory",
+    "crm": "CRM",
+    "sales": "Sales",
+    "scheduling": "Scheduling",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "inventory": {
+    "title": "Vehicle Inventory",
+    "addCar": "Add Vehicle",
+    "editCar": "Edit Vehicle",
+    "vin": "VIN",
+    "decodeVin": "Decode VIN",
+    "make": "Make",
+    "model": "Model",
+    "year": "Year",
+    "price": "Price",
+    "status": "Status",
+    "available": "Available",
+    "sold": "Sold",
+    "pending": "Pending",
+    "photo": "Photo",
+    "notes": "Notes"
+  },
+  "crm": {
+    "title": "Customer Relationship Management",
+    "customers": "Customers",
+    "leads": "Leads",
+    "addCustomer": "Add Customer",
+    "addLead": "Add Lead",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "status": "Status",
+    "new": "New",
+    "contacted": "Contacted",
+    "qualified": "Qualified",
+    "converted": "Converted",
+    "lost": "Lost",
+    "followUp": "Follow Up Date"
+  },
+  "sales": {
+    "title": "Sales & Invoicing",
+    "createSale": "Create Sale",
+    "selectCar": "Select Vehicle",
+    "selectCustomer": "Select Customer",
+    "saleDate": "Sale Date",
+    "tax": "Tax",
+    "total": "Total",
+    "generateInvoice": "Generate Invoice",
+    "invoice": "Invoice"
+  },
+  "scheduling": {
+    "title": "Employee Scheduling",
+    "addShift": "Add Shift",
+    "employee": "Employee",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "date": "Date"
+  },
+  "reports": {
+    "title": "Reports & Analytics",
+    "dashboard": "Dashboard",
+    "totalInventory": "Total Inventory Value",
+    "salesThisMonth": "Sales This Month",
+    "activeLeads": "Active Leads"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "translationApi": "Translation API",
+    "apiKey": "API Key",
+    "enableTranslation": "Enable Translation Toggle",
+    "autoLock": "Auto Lock",
+    "lockAfter": "Lock After (minutes)"
+  }
+}

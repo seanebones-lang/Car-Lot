@@ -1,0 +1,100 @@
+{
+  "common": {
+    "appName": "AutoLot Pro Desktop",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "search": "بحث",
+    "filter": "تصفية",
+    "export": "تصدير",
+    "import": "استيراد",
+    "close": "إغلاق",
+    "submit": "إرسال",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح"
+  },
+  "navigation": {
+    "inventory": "المخزون",
+    "crm": "إدارة العملاء",
+    "sales": "المبيعات",
+    "scheduling": "الجدولة",
+    "reports": "التقارير",
+    "settings": "الإعدادات"
+  },
+  "inventory": {
+    "title": "مخزون المركبات",
+    "addCar": "إضافة مركبة",
+    "editCar": "تعديل مركبة",
+    "vin": "رقم الهيكل",
+    "decodeVin": "فك رموز رقم الهيكل",
+    "make": "الصانع",
+    "model": "الموديل",
+    "year": "السنة",
+    "price": "السعر",
+    "status": "الحالة",
+    "available": "متاح",
+    "sold": "مباع",
+    "pending": "قيد الانتظار",
+    "photo": "صورة",
+    "notes": "ملاحظات"
+  },
+  "crm": {
+    "title": "إدارة علاقات العملاء",
+    "customers": "العملاء",
+    "leads": "الفرص",
+    "addCustomer": "إضافة عميل",
+    "addLead": "إضافة فرصة",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "status": "الحالة",
+    "new": "جديد",
+    "contacted": "تم الاتصال",
+    "qualified": "مؤهل",
+    "converted": "محول",
+    "lost": "مفقود",
+    "followUp": "تاريخ المتابعة"
+  },
+  "sales": {
+    "title": "المبيعات والفواتير",
+    "createSale": "إنشاء بيع",
+    "selectCar": "اختر المركبة",
+    "selectCustomer": "اختر العميل",
+    "saleDate": "تاريخ البيع",
+    "tax": "الضريبة",
+    "total": "الإجمالي",
+    "generateInvoice": "إنشاء فاتورة",
+    "invoice": "فاتورة"
+  },
+  "scheduling": {
+    "title": "جدولة الموظفين",
+    "addShift": "إضافة وردية",
+    "employee": "الموظف",
+    "startTime": "وقت البدء",
+    "endTime": "وقت الانتهاء",
+    "date": "التاريخ"
+  },
+  "reports": {
+    "title": "التقارير والتحليلات",
+    "dashboard": "لوحة التحكم",
+    "totalInventory": "إجمالي قيمة المخزون",
+    "salesThisMonth": "المبيعات هذا الشهر",
+    "activeLeads": "الفرص النشطة"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "theme": "المظهر",
+    "light": "فاتح",
+    "dark": "داكن",
+    "translationApi": "واجهة برمجة الترجمة",
+    "apiKey": "مفتاح API",
+    "enableTranslation": "تفعيل مفتاح الترجمة",
+    "autoLock": "القفل التلقائي",
+    "lockAfter": "القفل بعد (دقائق)"
+  }
+}
