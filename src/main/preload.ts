@@ -62,4 +62,16 @@ contextBridge.exposeInMainWorld('electronAPI', {
   translate: {
     translateText: (text: string, targetLang: string) => ipcRenderer.invoke('translate:text', text, targetLang),
   },
+  // Backups
+  backup: {
+    create: () => ipcRenderer.invoke('backup:create'),
+    restore: (backupPath: string) => ipcRenderer.invoke('backup:restore', backupPath),
+    list: () => ipcRenderer.invoke('backup:list'),
+  },
+  // File Operations
+  file: {
+    selectImage: () => ipcRenderer.invoke('file:selectImage'),
+    saveCarPhoto: (filePath: string, carId: number) => ipcRenderer.invoke('file:saveCarPhoto', filePath, carId),
+    getPhotoPath: (relativePath: string) => ipcRenderer.invoke('file:getPhotoPath', relativePath),
+  },
 });

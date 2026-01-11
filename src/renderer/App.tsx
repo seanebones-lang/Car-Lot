@@ -11,13 +11,6 @@ const App: React.FC = () => {
   const { user } = useAppStore();
   const [isAuthenticated, setIsAuthenticated] = useState(!!user);
 
-  // For development, skip login - remove this in production
-  React.useEffect(() => {
-    if (!user) {
-      setIsAuthenticated(true); // Skip auth for now
-    }
-  }, [user]);
-
   if (!isAuthenticated) {
     return (
       <I18nextProvider i18n={i18n}>

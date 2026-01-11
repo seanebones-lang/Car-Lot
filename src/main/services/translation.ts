@@ -1,5 +1,6 @@
 import { TranslationServiceClient } from '@google-cloud/translate';
 import { getDatabase } from '../database';
+import { encrypt, decrypt } from './encryption';
 
 export class TranslationService {
   private client: TranslationServiceClient | null = null;
@@ -13,8 +14,19 @@ export class TranslationService {
     const db = getDatabase();
     const setting = db.prepare('SELECT value FROM settings WHERE key = ?').get('translationApiKey') as { value: string } | undefined;
     if (setting) {
-      this.apiKey = JSON.parse(setting.value);
-      this.initializeClient();
+      try {
+        // Try to decrypt (new encrypted format) or use as-is (legacy unencrypted)
+        try {
+          this.apiKey = decrypt(setting.value);
+        } catch {
+          // If decryption fails, assume it's legacy unencrypted format
+          this.apiKey = JSON.parse(setting.value);
+        }
+        this.initializeClient();
+      } catch (error) {
+        console.error('Failed to load API key:', error);
+        this.apiKey = null;
+      }
     }
   }
 
@@ -62,8 +74,10 @@ export class TranslationService {
 
   updateApiKey(apiKey: string) {
     const db = getDatabase();
+    // Encrypt the API key before storing
+    const encryptedKey = encrypt(apiKey);
     db.prepare('INSERT OR REPLACE INTO settings (key, value, updatedAt) VALUES (?, ?, CURRENT_TIMESTAMP)')
-      .run('translationApiKey', JSON.stringify(apiKey));
+      .run('translationApiKey', encryptedKey);
     this.apiKey = apiKey;
     this.initializeClient();
   }
